@@ -2,5 +2,9 @@ site_name: My Docs
 
 theme:
   name: material
+  custom_dir: docs/overrides
   palette:
-    scheme: slate
+    primary: custom
+
+extra_css:
+  - stylesheets/extra.css
