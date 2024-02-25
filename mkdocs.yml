@@ -1,10 +1,21 @@
-site_name: My Docs
+site_name: Aza Kamala
 
 theme:
   name: material
   custom_dir: docs/overrides
   palette:
     primary: custom
+  features:
+    - navigation.sections
+
+nav:
+  - Blog:
+    - blog/index.md
+    - blog/posts/hello.md
+
+plugins:
+  - blog:
+      enabled: false
 
 extra_css:
   - stylesheets/extra.css
