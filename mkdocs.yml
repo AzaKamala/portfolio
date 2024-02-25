@@ -20,7 +20,7 @@ nav:
 
 plugins:
   - blog:
-      blog_dir: ./blog/
+      enabled: true
 
 extra_css:
   - stylesheets/extra.css
