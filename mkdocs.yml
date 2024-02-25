@@ -15,8 +15,7 @@ theme:
     - navigation.sections
 
 nav:
-  - Blog: 
-      blog/index.md
+  - blog/index.md
 
 plugins:
   - blog:
