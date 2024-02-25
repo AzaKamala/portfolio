@@ -4,18 +4,23 @@ theme:
   name: material
   custom_dir: docs/overrides
   palette:
-    primary: custom
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+      primary: custom
+      accent: custom
   features:
     - navigation.sections
 
 nav:
-  - Blog:
-    - blog/index.md
-    - blog/posts/hello.md
+  - Blog: 
+      blog/index.md
 
 plugins:
   - blog:
-      enabled: false
+      blog_dir: ./blog/
 
 extra_css:
   - stylesheets/extra.css
