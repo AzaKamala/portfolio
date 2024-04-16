@@ -15,11 +15,15 @@ theme:
     - navigation.sections
 
 nav:
-  - blog/index.md
+  - Blog: 
+      blog/index.md
 
 plugins:
   - blog:
-      enabled: true
+      blog_dir: ./blog
+      categories: true
+  - search
+  - tags
 
 extra_css:
   - stylesheets/extra.css
