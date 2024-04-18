@@ -1,4 +1,1 @@
----
-title: Title
-template: home.html
----
+# Blog

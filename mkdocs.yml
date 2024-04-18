@@ -15,13 +15,11 @@ theme:
     - navigation.sections
 
 nav:
-  - Blog: 
-      blog/index.md
+  - index.md
 
 plugins:
   - blog:
-      blog_dir: ./blog
-      categories: true
+      blog_dir: .
   - search
   - tags
 
