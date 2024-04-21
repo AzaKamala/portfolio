@@ -8,7 +8,7 @@ tags:
   - Bar
 ---
 
-# Hello world!
+# Hello world too!
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec
 maximus ex. Sed consequat, nulla quis malesuada dapibus, elit metus vehicula
