@@ -12,6 +12,8 @@ tags:
 
 When you have two Docker containers, one runs a database, and the other runs an application that needs to be connected to the database. You can’t connect it using the [localhost](http://localhost/) address even if both Dockers run on the same machine. That is because each container has its own file system, network capabilities, and so on. Therefore, if you refer to localhost, it will search within the container (Which can’t be found).
 
+<!-- more -->
+
 The short answer is that both containers should be running on the same Docker network, and use the name of the database container as your `HOST` connection inside the app.
 
 The rest of this blog is an example of how to do it.
@@ -64,7 +66,7 @@ To check if the container is running run this command:
 docker ps
 ```
 
-![Image](../../assets/connect-a-database-docker-container-with-a-nodejs-app-container/20240820113130.png)
+![Image](./connect-a-database-docker-container-with-a-nodejs-app-container/20240820113130.png)
 
 After this, you need to create the database, so run this command to access the PostgreSQL container:
 
@@ -137,11 +139,11 @@ knex seed:run
 
 Now let's see if it is working. we go to http://localhost:3000.
 
-![image](../../assets/connect-a-database-docker-container-with-a-nodejs-app-container/20240820115003.png)
+![image](./connect-a-database-docker-container-with-a-nodejs-app-container/20240820115003.png)
 
 For the moment of truth, we visit http://localhost:3000/hello.
 
-![image](../../assets/connect-a-database-docker-container-with-a-nodejs-app-container/20240820114932.png)
+![image](./connect-a-database-docker-container-with-a-nodejs-app-container/20240820114932.png)
 
 ## Conclusion
 
