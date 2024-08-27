@@ -10,7 +10,7 @@ tags:
 
 ## Introduction
 
-When you have two Docker containers, one runs a database, and the other runs an application that needs to be connected to the database. You can’t connect it using the [localhost](http://localhost/) address even if both Dockers run on the same machine. That is because each container has its own file system, network capabilities, and so on. Therefore, if you refer to localhost, it will search within the container (Which can’t be found).
+When you have two Docker containers, one runs a database, and the other runs an application that needs to be connected to the database. You can’t connect it using the localhost address even if both Dockers run on the same machine. That is because each container has its own file system, network capabilities, and so on. Therefore, if you refer to localhost, it will search within the container (Which can’t be found).
 
 <!-- more -->
 
